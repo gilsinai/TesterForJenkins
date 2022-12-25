@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker{
+    docker {
       image 'python:2-alpine'
       }
     }
