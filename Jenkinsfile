@@ -1,14 +1,18 @@
 pipeline {
-  agent any
+  agent {
+    docker{
+      image 'python:2-alpine'
+      }
+    }
   stages {
     stage('version') {
       steps {
-        sh 'python -m --version'
+        sh 'python --version'
       }
     }
     stage('hello') {
       steps {
-        sh 'python -m runTest.py'
+        sh 'python runTest.py'
       }
     }
   }
