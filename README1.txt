@@ -1,3 +1,4 @@
+If you see this in the output log you almost done!!!
 *********************************
 Hello World!
 *********************************
